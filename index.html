@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Víctor ❤️</title>
+  <meta name="description" content="Una pequeña historia hecha con mucho amor para Víctor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="decor snoopy-decor"><img src="img/snoopy.png" alt="" onerror="this.style.display='none'"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">PARA ALGUIEN MUY ESPECIAL</p>
+        <h1>Víctor<span>❤️</span></h1>
+        <p class="hero-subtitle">Tengo algo que quiero decirte...</p>
+        <button class="primary-btn" data-scroll="#historia">Tengo algo que decirte <span>♡</span></button>
+      </div>
+      <div class="scroll-hint">desliza suavemente ↓</div>
+    </section>
+
+    <section class="section letter-section" id="historia">
+      <div class="section-inner narrow reveal">
+        <p class="eyebrow">UNA PEQUEÑA CONFESIÓN</p>
+        <h2>Lo que empezó de la nada...</h2>
+        <div class="letter">
+          <p>Lo que empecé a sentir por ti fue de la nada.</p>
+          <p>Sin pensarlo, sin planearlo y sin darme cuenta, poco a poco te convertiste en una de las personas más importantes de mi vida.</p>
+          <p>Y hoy quiero que sepas algo que quizá no siempre sé decirte con palabras:</p>
+          <p class="big-line">Te amo. ❤️</p>
+          <p>Estoy dispuesto a dar todo de mí por ti, a cuidarte, acompañarte, escucharte y celebrar cada una de tus alegrías.</p>
+          <p>Y, por encima de todo, siempre voy a desear lo mejor para ti. Quiero verte feliz, cumplir tus sueños y llegar tan lejos como quieras.</p>
+          <p>No sé exactamente en qué momento pasó...</p>
+          <p class="highlight">pero me alegra muchísimo que hayas llegado a mi vida.</p>
+        </div>
+        <button class="ghost-btn" data-scroll="#pregunta1">Tengo una pregunta para ti ↓</button>
+      </div>
+    </section>
+
+    <section class="section question-section" id="pregunta1">
+      <div class="question-card reveal">
+        <div class="tiny-heart">♡</div>
+        <p class="eyebrow">PREGUNTA #01</p>
+        <h2>Víctor...<br>¿me quieres mucho<br><span>mucho mucho?</span> 🥺❤️</h2>
+        <p class="question-note">Piénsalo bien antes de responder...</p>
+        <div class="answer-area">
+          <button id="yesBtn" class="answer yes">SÍ ❤️</button>
+          <button id="noBtn" class="answer no">NO 😈</button>
+        </div>
+        <p id="noMessage" class="no-message"></p>
+      </div>
+    </section>
+
+    <section class="section celebration hidden" id="celebration">
+      <div class="celebration-content">
+        <div class="burst-heart">♥</div>
+        <p class="eyebrow">RESPUESTA CORRECTA</p>
+        <h2>Yo también te quiero<br><span>mucho mucho,</span><br>mi niño hermoso. ❤️</h2>
+        <p>Y probablemente un poquito más de lo que imaginas.</p>
+        <button class="primary-btn" data-scroll="#fotos">Hay más para ti ↓</button>
+      </div>
+    </section>
+
+    <section class="section photos-section" id="fotos">
+      <div class="section-inner">
+        <div class="reveal centered">
+          <p class="eyebrow">NOSOTROS</p>
+          <h2>Y pensar que todo esto<br>comenzó sin avisar...</h2>
+        </div>
+
+        <div class="photo-story">
+          <article class="photo-card reveal">
+            <div class="photo-frame"><img src="img/foto1.jpg" alt="Nuestra foto 1"></div>
+            <div class="photo-caption"><span>01</span><p>Hasta que empezaste a ocupar un espacio demasiado grande en mi corazón.</p></div>
+          </article>
+
+          <article class="photo-card reverse reveal">
+            <div class="photo-frame"><img src="img/foto2.jpg" alt="Nuestra foto 2"></div>
+            <div class="photo-caption"><span>02</span><p>Y sin darme cuenta, empecé a encontrar felicidad simplemente estando contigo.</p></div>
+          </article>
+
+          <article class="photo-card reveal">
+            <div class="photo-frame"><img src="img/foto3.jpg" alt="Nuestra foto 3"></div>
+            <div class="photo-caption"><span>03</span><p>Ahora eres parte de mis pensamientos, mis días y de algo muy bonito que llevo dentro.</p></div>
+          </article>
+        </div>
+
+        <div class="snoopy-note reveal">
+          <img src="img/snoopy.png" alt="Snoopy" onerror="this.style.display='none'">
+          <div>
+            <p class="eyebrow">SNOOPY DICE</p>
+            <p>“Creo que alguien está muy enamorado...” 🐶❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section question-section soft" id="pregunta2">
+      <div class="question-card reveal">
+        <div class="tiny-heart">♡</div>
+        <p class="eyebrow">PREGUNTA #02</p>
+        <h2>¿Sabes cuánto<br><span>te quiero?</span> 🥺</h2>
+        <div class="choices">
+          <button class="choice" data-correct="false">Poquito 😌</button>
+          <button class="choice" data-correct="true">Muchísimo ❤️</button>
+          <button class="choice" data-correct="true">Demasiado ❤️❤️</button>
+        </div>
+        <p id="choiceFeedback" class="feedback"></p>
+      </div>
+    </section>
+
+    <section class="section question-section" id="pregunta3">
+      <div class="question-card reveal">
+        <div class="tiny-heart">♡</div>
+        <p class="eyebrow">PREGUNTA #03</p>
+        <h2>¿Prometes seguir<br>dejando que te quiera? <span>🥺</span></h2>
+        <button id="promiseBtn" class="big-choice">SÍ, PROMETO ❤️</button>
+        <p id="promiseText" class="feedback"></p>
+      </div>
+    </section>
+
+    <section class="section shinobu-section">
+      <div class="section-inner two-col reveal">
+        <div class="character">
+          <img src="img/shinobu.png" alt="Shinobu" onerror="this.style.display='none'">
+        </div>
+        <div class="shinobu-copy">
+          <p class="eyebrow">SHINOBU TIENE ALGO QUE DECIR</p>
+          <h2>“Parece que alguien está muy enamorado...” 🌸</h2>
+          <p>Y sí. No voy a intentar esconderlo.</p>
+          <p class="highlight">Me gustas. Me importas. Te amo.</p>
+          <button id="heartRainBtn" class="primary-btn">Haz llover corazones ❤️</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-section" id="final">
+      <div class="final-glow"></div>
+      <div class="final-content reveal">
+        <p class="eyebrow">Y ANTES DE TERMINAR...</p>
+        <div class="final-heart">♥</div>
+        <h2>Víctor,</h2>
+        <p>No hice todo esto para pedirte nada.</p>
+        <p>Solo quería que supieras algo que quizá no siempre sé expresar con palabras.</p>
+        <p class="final-love">Te amo.</p>
+        <p>Aunque no sé exactamente qué nos espera mañana, siempre voy a desear que seas feliz, que cumplas tus sueños y que te vaya increíble en la vida.</p>
+        <p>Gracias por existir y por haberte convertido, sin avisarme, en alguien tan importante para mí.</p>
+        <p class="signature">Con todo mi amor,<br><strong>yo ❤️</strong></p>
+        <button class="restart" onclick="location.reload()">Volver a empezar ❤️</button>
+      </div>
+    </section>
+  </main>
+
+  <button id="musicBtn" class="music-btn" title="Activar música">♫</button>
+  <audio id="music" loop>
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
