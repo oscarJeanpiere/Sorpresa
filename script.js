@@ -22,7 +22,7 @@ document.querySelectorAll('[data-scroll]').forEach(button => {
   });
 });
 document.getElementById('wishBtn').addEventListener('click', () => {
-  document.getElementById('wishMessage').textContent = 'Mi deseo ya se cumplió: encontrarte a ti. ❤️';
+  document.getElementById('wishMessage').textContent = '¿Estar juntos para toda la vida? Ten por seguro que así será ❤️.';
   burst(65);
 });
 if ('IntersectionObserver' in window && !reducedMotion) {
