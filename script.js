@@ -38,3 +38,31 @@ if ('IntersectionObserver' in window && !reducedMotion) {
 } else {
   document.querySelectorAll('.reveal').forEach(element => element.classList.add('visible'));
 }
+
+const music = document.getElementById('music');
+const musicBtn = document.getElementById('musicBtn');
+function updateMusicButton() {
+  const playing = !music.paused;
+  musicBtn.setAttribute('aria-pressed', String(playing));
+  musicBtn.setAttribute('aria-label', playing ? 'Pausar música' : 'Activar música');
+  musicBtn.querySelector('span').textContent = playing ? 'Pausar música' : 'Activar música';
+}
+async function startMusic() {
+  try { await music.play(); updateMusicButton(); }
+  catch { updateMusicButton(); }
+}
+musicBtn.addEventListener('click', () => {
+  if (music.paused) startMusic();
+  else { music.pause(); updateMusicButton(); }
+});
+// Los navegadores pueden exigir un gesto del visitante antes de reproducir audio.
+// Se intenta al cargar y se vuelve a intentar con el primer toque si fue bloqueado.
+window.addEventListener('load', startMusic, {once:true});
+function startOnFirstGesture(event) {
+  if (event.target === musicBtn || musicBtn.contains(event.target)) return;
+  if (music.paused) startMusic();
+  document.removeEventListener('pointerdown', startOnFirstGesture);
+  document.removeEventListener('keydown', startOnFirstGesture);
+}
+document.addEventListener('pointerdown', startOnFirstGesture);
+document.addEventListener('keydown', startOnFirstGesture);
